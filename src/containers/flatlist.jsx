@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux';
 import { setFlats } from '../actions';
 
-import Flat from '../components/flat.jsx';
+import Flat from './flat.jsx';
 
 class FaltList extends Component {
   componentWillMount() {
@@ -25,6 +25,7 @@ function mapDispatchToProps(dispatch) {
     dispatch
   );
 }
+
 function mapReduxStateToProps(reduxState) {
   return {
     flats: reduxState.flats
