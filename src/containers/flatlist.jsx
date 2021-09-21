@@ -31,5 +31,4 @@ function mapReduxStateToProps(reduxState) {
   };
 }
 
-
 export default connect(mapReduxStateToProps, mapDispatchToProps)(FaltList);

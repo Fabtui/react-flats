@@ -7,7 +7,7 @@ import '../assets/stylesheets/application.scss';
 
 import flatsReducer from './reducers/flats_reducer'
 const reducers = combineReducers({
-  flats: flatsReducer
+  flats: flatsReducer,
 })
 
 import App from './components/app.jsx';
