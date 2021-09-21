@@ -9,11 +9,10 @@ const flatsReducer = (state, action) => {
     return state;
   }
 
-
   // EQUAL TO
   // switch(action.type) {
   //   case 'SET_FLATS':
-  //     return action.payload;
+  //     return action.payloa d;
   //   default:
   //     return state;
   // }
