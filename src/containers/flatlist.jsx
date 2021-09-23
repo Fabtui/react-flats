@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { bindActionCreators } from 'redux'
+import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { setFlats } from '../actions';
 
-import Flat from './flat.jsx';
+import Flat from './flat';
 
 class FaltList extends Component {
   componentWillMount() {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { bindActionCreators } from 'redux'
+import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import { selectFlat } from '../actions';
 
 class Flat extends Component {
   handleClick = () => {
@@ -31,7 +32,6 @@ class Flat extends Component {
   }
 }
 
-import { selectFlat } from '../actions';
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
