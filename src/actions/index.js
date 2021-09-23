@@ -1,11 +1,29 @@
 import flats from '../../data/flats';
 
 export function setFlats() {
-  // API calls, For now simulate a DB
+  // imulate a DB:
+  // return {
+  //   type: 'SET_FLATS',
+  //   payload: flats
+  // }
+
+  // API call (with reduxPromise middleware):
+  // return fetch("https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/flats.json")
+  //   .then(response => response.json())
+  //   .then((data) => {
+  //     return {
+  //       type: 'SET_FLATS',
+  //       payload: data
+  //     };
+  //   });
+
+  // EQUAL TO
+  const promise = fetch("https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/flats.json")
+    .then(response => response.json());
   return {
     type: 'SET_FLATS',
-    payload: flats
-  }
+    payload: promise
+  };
 }
 
 export function selectFlat(flat) {
