@@ -35,7 +35,7 @@ class Flat extends Component {
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
-    { selectFlat: selectFlat },
+    { selectFlat },
     dispatch
   );
 }
